@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetMeet", "GetMeet.csproj", "{F012BDBF-2DAF-4C67-AE1C-A1AB02A451CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F012BDBF-2DAF-4C67-AE1C-A1AB02A451CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F012BDBF-2DAF-4C67-AE1C-A1AB02A451CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F012BDBF-2DAF-4C67-AE1C-A1AB02A451CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F012BDBF-2DAF-4C67-AE1C-A1AB02A451CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ADA556E-A71F-4330-9B27-E0404BB0E8E3}
+	EndGlobalSection
+EndGlobal
