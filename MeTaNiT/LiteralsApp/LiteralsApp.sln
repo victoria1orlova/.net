@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiteralsApp", "LiteralsApp.csproj", "{E12EBF0D-5D43-47DB-B14C-40E040CC568F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E12EBF0D-5D43-47DB-B14C-40E040CC568F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12EBF0D-5D43-47DB-B14C-40E040CC568F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12EBF0D-5D43-47DB-B14C-40E040CC568F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12EBF0D-5D43-47DB-B14C-40E040CC568F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BC624EF-0D42-47E2-8A6B-9C7A11A6F10F}
+	EndGlobalSection
+EndGlobal
