@@ -13,6 +13,8 @@ namespace FirstBot
             Bot.OnMessageEdited += Bot_OnMessage;
 
             Bot.StartReceiving();
+            Console.WriteLine(" -= Telegram Bot started =-");
+            Console.WriteLine("Press Enter to stop this bot...");
             Console.ReadLine();
             Bot.StopReceiving();
         }
@@ -21,19 +23,32 @@ namespace FirstBot
         {
             if (e.Message.Type == Telegram.Bot.Types.Enums.MessageType.TextMessage)
             {
-                if (e.Message.Text == "How are you?")
-                    Bot.SendTextMessageAsync(e.Message.Chat.Id, "Fine, thank you) And you?");
+                var text = "I did not understand you?";
+
+                if (e.Message.Text == "Hi")
+                {
+                    text = $"Hello, {e.Message.Chat.FirstName}!";
+                } else if (e.Message.Text == "How are you?")
+                {
+                    text = "Fine, thanks)))))))";
+                }
                 else if (e.Message.Text == "Good morning)")
                 {
-                    Bot.SendTextMessageAsync(e.Message.Chat.Id, "Good morning, " + e.Message.Chat.Username);
-                }
-                else
+                    text = $"Good morning, {e.Message.Chat.Username}";
+                } else if(e.Message.Text == "What are you do?")
                 {
-                    Bot.SendTextMessageAsync(e.Message.Chat.Id, @"Usage:                            
-                       How are you?                            
-                       Good morning!
-                        ");
+                    text = "Nothint, do you want solve some task?";
                 }
+                else if (e.Message.Text == "Okay))))")
+                {
+                    text = "2+2=...";
+                }
+                else if (e.Message.Text == "4")
+                {
+                    text = "Good job!";
+                }
+
+                Bot.SendTextMessageAsync(e.Message.Chat.Id, text);
             }
         }
     }
