@@ -12,11 +12,7 @@ namespace HelperApp
             Console.WriteLine("+");
             Console.WriteLine("\n");
 
-            // 2.1
-            Console.WriteLine("++++++++++");
-            Console.WriteLine("\n");
-
-            // 2.2
+            // 2
             for (int i = 0; i < 20; i++)
             {
                 Console.Write("+");
@@ -24,11 +20,18 @@ namespace HelperApp
             Console.WriteLine("\n");
 
             // 3
-            Console.WriteLine("++++\n" +
-                              "++++\n" +
-                              "++++\n" +
-                              "++++\n");
-            Console.WriteLine("\n");
+            var length = 15;
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = length - 1; j >= 0; j--)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
 
             // 4
             Console.WriteLine("++++++++++\n" +
