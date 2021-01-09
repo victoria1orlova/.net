@@ -20,25 +20,21 @@ namespace MathApp
 
             string o = Console.ReadLine();
             var c = 0.0;
-            if (o == "+")
+
+            switch (o)
             {
-                c = a + b;
-            }
-            else if (o == "-")
-            {
-                c = a - b;
-            }
-            if (o == "*")
-            {
-                c = a * b;
-            }
-            else if (o == "/")
-            {
-                c = a / b;
-            }
-            else
-            {
-                Console.WriteLine($"Error! Not correct math operation");
+                case "+":
+                    c = a + b;
+                    break;
+                case "-":
+                    c = a - b;
+                    break;
+                case "*":
+                    c = a * b;
+                    break;
+                case "/":
+                    c = a / b;
+                    break;
             }
 
             Console.WriteLine($"{a}{o}{b}={c}");
