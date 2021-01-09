@@ -28,22 +28,20 @@ namespace MathApp
             {
                 c = a - b;
             }
+            if (o == "*")
+            {
+                c = a * b;
+            }
+            else if (o == "/")
+            {
+                c = a / b;
+            }
             else
             {
                 Console.WriteLine($"Error! Not correct math operation");
             }
 
             Console.WriteLine($"{a}{o}{b}={c}");
-
-            //Console.WriteLine($"a={a}  b={b}");
-            //
-            //Console.WriteLine($"{a}+{b}={a + b}");
-            //
-            //Console.WriteLine($"{a}-{b}={a - b}");
-            //
-            //Console.WriteLine($"{a}x{b}={a * b}");
-            //
-            //Console.WriteLine($"{a}÷{b}={a / b}");
 
             if (a > b)
             {
