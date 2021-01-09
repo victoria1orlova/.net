@@ -16,22 +16,46 @@ namespace MathApp
             string numB = Console.ReadLine();
             var b = double.Parse(numB);
 
-            Console.WriteLine($"a={a}  b={b}");
-            Console.WriteLine($"{a}+{b}={a + b}");
+            Console.Write("Enter math operation: ");
 
-            Console.WriteLine($"{a}-{b}={a - b}");
+            string o = Console.ReadLine();
+            var c = 0.0;
+            if (o == "+")
+            {
+                c = a + b;
+            }
+            else if (o == "-")
+            {
+                c = a - b;
+            }
+            else
+            {
+                Console.WriteLine($"Error! Not correct math operation");
+            }
 
-            Console.WriteLine($"{a}x{b}={a * b}");
+            Console.WriteLine($"{a}{o}{b}={c}");
 
-            Console.WriteLine($"{a}÷{b}={a / b}");
+            //Console.WriteLine($"a={a}  b={b}");
+            //
+            //Console.WriteLine($"{a}+{b}={a + b}");
+            //
+            //Console.WriteLine($"{a}-{b}={a - b}");
+            //
+            //Console.WriteLine($"{a}x{b}={a * b}");
+            //
+            //Console.WriteLine($"{a}÷{b}={a / b}");
 
             if (a > b)
             {
                 Console.WriteLine($"Number {a} biggest than number {b}");
             }
-            else
+            else if(b > a)
             {
                 Console.WriteLine($"Number {b} biggest than number {a}");
+            }
+            else
+            {
+                Console.WriteLine($"Number {a} equal to number {b}");
             }
         }
     }
