@@ -14,11 +14,16 @@ namespace MathApp
 
             Console.Write("Enter here number 'b': ");
             string numB = Console.ReadLine();
-            double b = double.Parse(numB);
+            int b = int.Parse(numB);
 
             Console.WriteLine($"a={a}  b={b}");
-            
             Console.WriteLine($"{a}+{b}={a + b}");
+
+            Console.WriteLine($"{a}-{b}={a - b}");
+
+            Console.WriteLine($"{a}x{b}={a * b}");
+
+            Console.WriteLine($"{a}÷{b}={a / b}");
 
             if (a > b)
             {
