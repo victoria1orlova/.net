@@ -10,11 +10,11 @@ namespace MathApp
 
             Console.Write("Enter here number 'a': ");
             string numA = Console.ReadLine();
-            int a = int.Parse(numA);
+            var a = double.Parse(numA);
 
             Console.Write("Enter here number 'b': ");
             string numB = Console.ReadLine();
-            int b = int.Parse(numB);
+            var b = double.Parse(numB);
 
             Console.WriteLine($"a={a}  b={b}");
             Console.WriteLine($"{a}+{b}={a + b}");
