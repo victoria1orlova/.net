@@ -10,11 +10,17 @@ namespace StarLineApp
             Console.Write("Write the number of asterisks '*' --> ");
             var userInput = Console.ReadLine();
 
-            var lenght = int.Parse(userInput);
-            for (int i = 0; i < lenght; i++)
+            int i = 0;
+            while (i < 10)
             {
                 Console.WriteLine("*");
+                i++;
             }
+            //var lenght = int.Parse(userInput);
+            //for (int i = 0; i < lenght; i++)
+            //{
+            //    Console.WriteLine("*");
+            //}
         }
     }
 }
