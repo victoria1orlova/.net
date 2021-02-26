@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionRefApp", "OptionRefApp\OptionRefApp.csproj", "{F02085B9-B307-43FF-84A6-003EDD6E438A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F02085B9-B307-43FF-84A6-003EDD6E438A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02085B9-B307-43FF-84A6-003EDD6E438A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02085B9-B307-43FF-84A6-003EDD6E438A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02085B9-B307-43FF-84A6-003EDD6E438A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {874AA44E-391F-442A-BEB8-98FCE654A4A1}
+	EndGlobalSection
+EndGlobal
