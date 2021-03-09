@@ -12,27 +12,28 @@ namespace ConvertorTestApp
             Console.Write("Enter NUMBER of dollar course: ");
 
             int money = Int32.Parse(Console.ReadLine());
-            int result = 0;
+            double result = 0.0;
 
-            if (course == "hrn")
+            switch (course)
             {
-                ConvertHrn(money, ref result);
-            }
-            else
-            {
-                ConvertDol(money, ref result);
+                case "hrn":
+                    ConvertHrn(money, ref result);
+                    break;
+                case "dol":
+                    ConvertDol(money, ref result);
+                    break;
             }
 
             Console.WriteLine(result);
         }
 
-        static void ConvertHrn(int money, ref int result)
+        static void ConvertHrn(int money, ref double result)
         {
-            result = money / 28;
+            result = money / 28.0;
         }
-        static void ConvertDol(int money, ref int result)
+        static void ConvertDol(int money, ref double result)
         {
-            result = money * 28;
+            result = money * 28.0;
         }
     }
 }
