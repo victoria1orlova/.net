@@ -6,18 +6,17 @@ namespace OptionsApp
     {
         static void Main(string[] args)
         {
-            int area;
-            int perimetr;
-            GetData(3, 4, out area, out perimetr);
-            Console.WriteLine("Area : " + area);
-            Console.WriteLine("Perimetr : " + perimetr);
+            GetData(3, 4, out var perimeterSquare, out var perimeterRectangle);
+
+            Console.WriteLine("Perimeter rectangle : " + perimeterRectangle);
+            Console.WriteLine("Perimeter square : " + perimeterSquare);
 
             Console.ReadKey();
         }
-        static void GetData(int a, int b, out int area, out int perim)
+        static void GetData(int a, int b, out int perimeterRectangle, out int perimeterSquare)
         {
-            area = a * b;
-            perim = (a + b) * 2;
+            perimeterRectangle = (a + b) * 2;
+            perimeterSquare = a * 4;
         }
     }
 }
