@@ -8,14 +8,17 @@ namespace StarLineApp
         static void Main()
         {
             Console.WriteLine("-= STAR LINE =-");
-            Console.Write("Write the number of asterisks '*' --> ");
-            var l = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int l;
+            do
+            {
+                Console.Write("Write the number of asterisks '*' --> ");
+            } while (!int.TryParse(Console.ReadLine(), out l));
 
             Console.Write("Write the number of spaces ' ' --> ");
             var spaceLength = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-                if (l > 1)
-                {
+            if (l > 1)
+            {
                 for (var i = 0; i < l; i++)
                 {
                     Console.Write("*");
@@ -30,11 +33,15 @@ namespace StarLineApp
             {
                 Console.WriteLine("Error! Please change your number to biggest number");
             }
-            Thread.Sleep(5000);
-            Console.Clear();
-            Console.WriteLine("For EXIT press 'Q'");
 
-            while (Console.ReadKey().Key != ConsoleKey.Q);
+
+
+            while (Console.ReadKey().Key != ConsoleKey.Q)
+            {
+                Thread.Sleep(500);
+                Console.Clear();
+                Console.WriteLine("For EXIT press 'Q'");
+            }
         }
     }
 }
