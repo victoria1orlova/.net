@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PairedApp", "PairedApp.csproj", "{22A1A9AD-32CE-428D-83E1-D38B52A96E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairedAppTests", "..\PairedAppTests\PairedAppTests.csproj", "{DA31FB4F-94A3-485E-A483-2E6199C2EE86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A1A9AD-32CE-428D-83E1-D38B52A96E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A1A9AD-32CE-428D-83E1-D38B52A96E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A1A9AD-32CE-428D-83E1-D38B52A96E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A1A9AD-32CE-428D-83E1-D38B52A96E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA31FB4F-94A3-485E-A483-2E6199C2EE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA31FB4F-94A3-485E-A483-2E6199C2EE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA31FB4F-94A3-485E-A483-2E6199C2EE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA31FB4F-94A3-485E-A483-2E6199C2EE86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7D03B11-EDB7-44C2-AF86-E4F519FDA532}
+	EndGlobalSection
+EndGlobal
