@@ -6,6 +6,8 @@ namespace PairedApp
     {
         static void Main()
         {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+
             Console.WriteLine("                           -= The program for determining the pairing of numbers =-");
 
             Console.Write("\nEnter number: ");
@@ -14,6 +16,8 @@ namespace PairedApp
             var num = int.Parse(str);
 
             var result = num % 2 == 0;
+            
+            Console.ForegroundColor = ConsoleColor.Blue;
 
             var message = result 
                 ? "Number is even"
