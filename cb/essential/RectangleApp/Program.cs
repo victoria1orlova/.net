@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RectangleApp
+﻿namespace RectangleApp
 {
     class Program
     {

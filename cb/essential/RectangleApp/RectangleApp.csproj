@@ -9,8 +9,4 @@
     <None Remove="Readme.txt" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Include="Readme.txt" />
-  </ItemGroup>
-
 </Project>
