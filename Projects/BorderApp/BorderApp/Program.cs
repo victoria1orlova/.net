@@ -6,9 +6,10 @@ namespace BorderApp
     {
         static void Main()
         {
-            var builderParams = new BuilderParams();
+            // var content = new[]{"=^_^=", "=^_^="};
+            var content = "=^_^=";
+            var builderParams = new BuilderParams(content);
             var borderBuilder = new BorderBuilder(builderParams);
-            var content = "+";
             string table = borderBuilder.Build(content);
             Console.WriteLine(table);
             Console.ReadKey();

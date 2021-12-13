@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 namespace BorderApp
 {
@@ -28,9 +27,12 @@ namespace BorderApp
             // ╚
             stringBuilder.Append((char)9562);
 
-            //═
-            stringBuilder.Append((char)9552);
-
+            for (int i = 0; i < _builderParams.Length; i++)
+            {
+                //═
+                stringBuilder.Append((char)9552);
+            }
+            
             // ╝
             stringBuilder.Append((char)9565);
         }
@@ -51,8 +53,11 @@ namespace BorderApp
             //╔
             stringBuilder.Append((char)9556);
 
-            //═
-            stringBuilder.Append((char)9552);
+            for (int i = 0; i < _builderParams.Length; i++)
+            {
+                //═
+                stringBuilder.Append((char)9552);
+            }
 
             // ╗
             stringBuilder.Append((char)9559 + "\n");
