@@ -15,23 +15,16 @@ namespace BorderApp
         public string Build(string content)
         {
             var stringBuilder = new StringBuilder();
-            //╔
-            stringBuilder.Append((char)9556);
 
-            //═
-            stringBuilder.Append((char)9552);
+            BuildHead(stringBuilder);
+            BuildBody(stringBuilder, content);
+            BuildFooter(stringBuilder);
+            
+            return stringBuilder.ToString();
+        }
 
-            // ╗
-            stringBuilder.Append((char)9559 + "\n");
-
-            // ║
-            stringBuilder.Append((char)9553);
-
-            stringBuilder.Append(content);
-
-            // ║
-            stringBuilder.Append((char)9553 + "\n");
-
+        private void BuildFooter(StringBuilder stringBuilder)
+        {
             // ╚
             stringBuilder.Append((char)9562);
 
@@ -40,8 +33,29 @@ namespace BorderApp
 
             // ╝
             stringBuilder.Append((char)9565);
+        }
 
-            return stringBuilder.ToString();
+        private void BuildBody(StringBuilder stringBuilder, string content)
+        {
+            // ║
+            stringBuilder.Append((char)9553);
+
+            stringBuilder.Append(content);
+
+            // ║
+            stringBuilder.Append((char)9553 + "\n");
+        }
+
+        private void BuildHead(StringBuilder stringBuilder)
+        {
+            //╔
+            stringBuilder.Append((char)9556);
+
+            //═
+            stringBuilder.Append((char)9552);
+
+            // ╗
+            stringBuilder.Append((char)9559 + "\n");
         }
     }
 }
