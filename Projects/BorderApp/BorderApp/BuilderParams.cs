@@ -1,12 +1,15 @@
-﻿namespace BorderApp
+﻿using BorderApp.Model;
+
+namespace BorderApp
 {
     internal class BuilderParams
     {
-        public BuilderParams(string content)
+        public TableParam Build(string content)
         {
-            Length = content.Length;
+            return new TableParam
+            {
+                Length = content.Length
+            };
         }
-
-        public int Length { get; set; }
     }
 }
