@@ -5,12 +5,17 @@ namespace BorderApp
 {
     internal class BorderBuilder
     {
-        public string Build(string content, TableParam tableParam)
+        public string Build(string[] content, TableParam tableParam)
         {
             var stringBuilder = new StringBuilder();
 
             BuildHead(stringBuilder, tableParam);
-            BuildBody(stringBuilder, content, tableParam);
+
+            for (var i = 0; i < tableParam.Height; i++)
+            {
+                BuildBody(stringBuilder, content[i], tableParam);
+            }
+
             BuildFooter(stringBuilder, tableParam);
             
             return stringBuilder.ToString();

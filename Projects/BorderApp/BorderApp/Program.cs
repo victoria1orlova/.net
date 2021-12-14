@@ -7,11 +7,12 @@ namespace BorderApp
     {
         static void Main()
         {
-            // var content = new[]{"=^_^=", "=^_^="};
-            var content = "=^_^=";
-            var builderParams = new BuilderParams();
+            ExampleGenerator exampleGenerator = new();
+            string[] content = exampleGenerator.Generate();
+
+            BuilderParams builderParams = new();
             TableParam tableParam = builderParams.Build(content);
-            var borderBuilder = new BorderBuilder();
+            BorderBuilder borderBuilder = new();
             string table = borderBuilder.Build(content, tableParam);
             Console.WriteLine(table);
             Console.ReadKey();
