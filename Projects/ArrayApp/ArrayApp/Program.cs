@@ -5,6 +5,28 @@ namespace ArrayApp
     class Program
     {
         static void Main()
+        { 
+            // ShowExample();
+            RandomArray();
+        }
+
+        private static void RandomArray()
+        {
+            int[] arr = new int[10];
+
+            Random random = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = random.Next();
+            }
+
+            foreach (var t in arr)
+            {
+                Console.WriteLine(t);
+            }
+        }
+
+        private static void ShowExample()
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Enter number: ");
@@ -21,6 +43,5 @@ namespace ArrayApp
             var value = $"We multiplied it: \n{exp}";
             Console.WriteLine(value);
         }
-
     }
 }
