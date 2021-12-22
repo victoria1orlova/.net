@@ -4,13 +4,18 @@
     {
         public string[] Generate()
         {
-            return new[]
+            string[] result = new string[3];
+            for (int v = 2; v < 3; v++)
             {
-                "2 * 2 = 4",
-                "2 * 3 = 6",
-                "2 * 4 = 8",
-                // "2 * 5 = 10"
-            };
+                for (int i = 2, index = 0; i < result.Length + 2; i++, index++)
+                {
+                    var obj = $"{v} * {i} = {v * i}";
+                    result[index] = obj;
+                    //Console.WriteLine(obj);
+                }
+            }
+
+            return result;
         }
     }
 }
