@@ -4,12 +4,12 @@ namespace BorderApp
 {
     internal class BuilderParams
     {
-        public TableParam Build(string[] content)
+        public TableParam Build(string[] examples)
         {
             return new TableParam
             {
-                Length = content[0].Length,
-                Height = content.Length
+                Length = examples[0].Length,
+                Height = examples.Length
             };
         }
     }

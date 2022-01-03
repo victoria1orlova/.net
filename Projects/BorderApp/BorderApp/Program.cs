@@ -7,13 +7,12 @@ namespace BorderApp
     {
         static void Main()
         {
-            ExampleGenerator exampleGenerator = new();
-            string[] content = exampleGenerator.Generate();
+            string[] examples = ExampleGenerator.Generate();
 
             BuilderParams builderParams = new();
-            TableParam tableParam = builderParams.Build(content);
+            TableParam tableParam = builderParams.Build(examples);
             BorderBuilder borderBuilder = new();
-            string table = borderBuilder.Build(content, tableParam);
+            string table = borderBuilder.Build(examples, tableParam);
             Console.WriteLine(table);
             Console.ReadKey();
         }
