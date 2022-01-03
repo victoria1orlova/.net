@@ -6,11 +6,27 @@ namespace BorderApp
     {
         public TableParam Build(string[] examples)
         {
+            var length = GetLength(examples);
             return new TableParam
             {
-                Length = examples[0].Length,
+                Length = length,
                 Height = examples.Length
             };
+        }
+
+        private static int GetLength(string[] examples)
+        {
+            var length = 0;
+
+            for (var i = 0; i < examples.Length; i++)
+            {
+                if (length < examples[i].Length)
+                {
+                    length = examples[i].Length;
+                }
+            }
+
+            return length;
         }
     }
 }
