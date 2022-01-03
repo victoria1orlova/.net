@@ -3,7 +3,7 @@ using BorderApp.Model;
 
 namespace BorderApp
 {
-    internal class BorderBuilder
+    public class BorderBuilder
     {
         public string Build(string[] content, TableParam tableParam)
         {
@@ -51,12 +51,12 @@ namespace BorderApp
             stringBuilder.Append((char)9565);
         }
 
-        private void BuildBody(StringBuilder stringBuilder, string content, TableParam tableParam)
+        private void BuildBody(StringBuilder stringBuilder, string example, TableParam tableParam)
         {
             // ║
             stringBuilder.Append((char)9553);
 
-            stringBuilder.Append(content);
+            stringBuilder.Append(example);
 
             // ║
             stringBuilder.Append((char)9553 + "\n");

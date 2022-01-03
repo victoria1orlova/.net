@@ -12,11 +12,13 @@ namespace BorderAppTests
         {
             _target = new BuilderParams();
         }
+
         [Fact]
-        public void TestMethod()
+        public void Examples_TableParam_Build()
         {
             // arrange
-            string[] examples = {
+            string[] examples = 
+            {
                 "2 * 2 = 4",
                 "2 * 5 = 10",
             };
