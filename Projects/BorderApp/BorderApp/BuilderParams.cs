@@ -2,7 +2,7 @@
 
 namespace BorderApp
 {
-    internal class BuilderParams
+    public class BuilderParams
     {
         public TableParam Build(string[] examples)
         {
